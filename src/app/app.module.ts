@@ -5,13 +5,15 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { BrowserEventExperimentsComponent } from './browser-event-experiments/browser-event-experiments.component';
+import { EventBusExperimentsComponent } from './event-bus-experiments/event-bus-experiments.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     BrowserEventExperimentsComponent,
     BrowserEventExperimentsComponent,
-    BrowserEventExperimentsComponent
+    BrowserEventExperimentsComponent,
+    EventBusExperimentsComponent
   ],
   imports: [
     BrowserModule,
