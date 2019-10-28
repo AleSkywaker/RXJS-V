@@ -13,7 +13,7 @@ export class BrowserEventExperimentsComponent implements OnInit {
 
     this.hoverSection.addEventListener('mousemove', onMouseMove);
 
-    this.hoverSection.addEventListener('click', onClick);
+    // this.hoverSection.addEventListener('click', onClick);
   }
 
   unsubscribe() {
