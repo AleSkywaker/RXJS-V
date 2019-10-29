@@ -22,3 +22,5 @@ class EventBus implements Subject {
     this.observers.forEach(obs => obs.notify(data));
   }
 }
+
+export const globalEventBus = new EventBus();
