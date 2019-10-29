@@ -1,4 +1,5 @@
-import { Observer } from './event-bus';
+import * as _ from 'lodash';
+
 export interface Observer {
   notify(data: any);
 }
