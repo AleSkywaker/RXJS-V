@@ -1,3 +1,4 @@
+import { Observer } from './event-bus';
 export interface Observer {
   notify(data: any);
 }
@@ -9,6 +10,7 @@ interface Subject {
 }
 
 class EventBus implements Subject {
+  private observers: Observer[] = [];
   registerObserver(obs: Observer) {}
   unregisterObserver(obs: Observer) {}
   notifyObservers(data: any) {}
