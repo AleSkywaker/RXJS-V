@@ -18,5 +18,7 @@ class EventBus implements Subject {
   unregisterObserver(obs: Observer) {
     _.remove(this.observers, el => el === obs);
   }
-  notifyObservers(data: any) {}
+  notifyObservers(data: any) {
+    this.observers.forEach(obs => obs.notify(data));
+  }
 }
