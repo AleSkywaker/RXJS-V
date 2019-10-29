@@ -11,7 +11,9 @@ interface Subject {
 
 class EventBus implements Subject {
   private observers: Observer[] = [];
-  registerObserver(obs: Observer) {}
+  registerObserver(obs: Observer) {
+    this.observers.push(obs);
+  }
   unregisterObserver(obs: Observer) {}
   notifyObservers(data: any) {}
 }
