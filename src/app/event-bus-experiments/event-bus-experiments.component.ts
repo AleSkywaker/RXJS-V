@@ -10,6 +10,7 @@ import { testLessons } from 'app/shared/model/test-lessons';
 export class EventBusExperimentsComponent implements OnInit {
   constructor() {}
   ngOnInit() {
+    console.log('Top level component broadcasted all lessons ....');
     globalEventBus.notifyObservers(testLessons);
   }
   addLesson(value: any) {
