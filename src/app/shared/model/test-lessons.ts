@@ -1,5 +1,5 @@
 import { Lesson } from './lesson';
-export const lessons: Lesson[] = [
+export const testLessons: Lesson[] = [
   {
     id: 1,
     description: 'lesson one',
